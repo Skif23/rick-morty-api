@@ -1,0 +1,120 @@
+.characters {
+  background: #333;
+  padding-top: 5rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem 2rem;
+  background: #fff;
+  transition: all 0.4s ease;
+  
+}
+
+.card .character-image .character-status::first-letter {
+  text-transform: capitalize;
+}
+
+.card .character-image .character-status[data-status="alive"] {
+  background: green;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card .character-image .character-status[data-status="dead"] {
+  background: red;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card .character-image .character-status[data-status="unknown"] {
+  background: lightslategray;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  list-style: none;
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 5rem;
+}
+
+.character-info > p {
+  color: #333;
+}
+
+.character-image {
+  overflow: hidden;
+  position: relative;
+  margin: 1rem auto;
+}
+
+.character-status {
+  bottom: 0;
+  color: #fafafa;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 0.1rem;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+/* .card img {
+  object-fit: cover;
+} */
+
+.card .container .character-image img {
+  object-fit: cover;
+  transition: -webkit-transform 0.4s ease;
+  transition: transform 0.4s ease;
+  transition: transform 0.4s ease, -webkit-transform 0.4s ease;
+  width: 100%;
+}
+
+.character-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.character-species {
+  font-size: 1rem;
+  /* font-weight: bold; */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card li {
+  color: #f4f4f4;
+  padding: 0.4rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.bold {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.character-info {
+  text-align: left;
+}
+
+.heading-container {
+  color: #fff;
+  /* text-align: center; */
+  padding-bottom: 5rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.character-heading {
+  text-decoration: underline rgb(0, 206, 0);
+  text-underline-offset: 0.5rem;
+  margin: auto;
+  text-align: center;
+  width: fit-content;
+}

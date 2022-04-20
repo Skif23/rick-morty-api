@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+:root {
+  --font-family: "Roboto", sans-serif;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 88vh;
+  background: #333;
+}
+
+.home-image {
+  /* display: block; */
+  background: url("../../img/home-background.png") no-repeat center center /
+    cover;
+  width: 420px;
+  height: 420px;
+}
+
+.home-title {
+  font-family: var(--font-family);
+  color: #fff;
+  padding-bottom: 1rem;
+}
+
+.home-container p {
+  font-family: var(--font-family);
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  margin: 0 10rem;
+}

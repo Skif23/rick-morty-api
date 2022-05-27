@@ -23,7 +23,7 @@ body {
   justify-content: space-between;
 }
 
-.container {
+#main-navbar .container {
   height: 100%;
   margin: auto;
   max-width: 1100px;
@@ -53,8 +53,52 @@ body {
   color: green;
 }
 
-@media screen and (max-width: 1140px) {
-  .container {
-    width: 85%;
+.hamburger-menu {
+  display: none;
+  margin: 1em;
+  width: 40px;
+}
+
+.hamburger-menu:after,
+.hamburger-menu:before,
+.hamburger-menu div {
+  background-color: rgb(0, 202, 0);
+  border-radius: 3px;
+  content: "";
+  display: block;
+  height: 5px;
+  margin: 7px 0;
+  transition: all 0.4s ease-in-out;
+}
+
+.hamburger-menu:hover:before {
+  transform: translateY(12px) rotate(135deg);
+}
+
+.hamburger-menu:hover:after {
+  transform: translateY(-12px) rotate(-135deg);
+}
+
+.hamburger-menu:hover div {
+  transform: scale(0);
+}
+
+@media (max-width: 1100px) {
+  #main-navbar {
+    padding: 0.5rem 5rem;
+  }
+
+  #main-navbar ul {
+    display: none;
+  }
+
+  #main-navbar .hamburger-menu {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 768px) {
+  #main-navbar {
+    padding: 0.5rem 2rem;
   }
 }

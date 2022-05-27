@@ -5,26 +5,29 @@ function Header() {
   return (
     <div>
       <nav id="main-navbar">
-       <div className="container">
-       <h1 className="header-title">Rick & Morty Library</h1>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/character">Characters</Link>
-          </li>
-          <li>
-            <Link to="/episode">Episodes</Link>
-          </li>
-          <li>
-            <Link to="/location">Locations</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-        </ul>
-       </div>
+        <div className="container">
+          <h1 className="header-title">Rick & Morty Library</h1>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/character">Characters</Link>
+            </li>
+            <li>
+              <Link to="/episode">Episodes</Link>
+            </li>
+            <li>
+              <Link to="/location">Locations</Link>
+            </li>
+            <li>
+              <Link to="/about">About</Link>
+            </li>
+          </ul>
+          <div class="hamburger-menu">
+            <div></div>
+          </div>
+        </div>
       </nav>
 
       <Outlet />

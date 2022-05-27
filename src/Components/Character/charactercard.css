@@ -10,7 +10,6 @@
   margin: 1rem 2rem;
   background: #fff;
   transition: all 0.4s ease;
-  
 }
 
 .card .character-image .character-status::first-letter {
@@ -64,10 +63,6 @@ ul {
   width: 100%;
 }
 
-/* .card img {
-  object-fit: cover;
-} */
-
 .card .container .character-image img {
   object-fit: cover;
   transition: -webkit-transform 0.4s ease;
@@ -117,4 +112,31 @@ ul {
   margin: auto;
   text-align: center;
   width: fit-content;
+}
+
+@media (max-width: 768px) {
+  .card {
+    margin: 3rem 8rem;
+    padding-bottom: 1rem;
+  }
+
+  .card .container {
+    margin: 0;
+  }
+
+  ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .card {
+    margin: 1rem 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  ul {
+    margin: 1rem 5rem;
+  }
 }

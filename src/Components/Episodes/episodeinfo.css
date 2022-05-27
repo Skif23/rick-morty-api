@@ -6,3 +6,16 @@
   background: #333;
   height: 89vh;
 }
+
+.episode-info-holder  .episode-info-name {
+  color: #fff;
+  font-size: 3rem;
+}
+
+@media (max-width: 500px) {
+  .episode-info-holder  .episode-info-name{
+    color: #fff;
+    margin: auto;
+    font-size: 2rem;
+  }
+}

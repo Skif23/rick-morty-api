@@ -17,3 +17,13 @@
   text-align: center;
   width: fit-content;
 }
+
+@media (max-width: 768px) {
+  .episodes {
+    padding: 5rem 0;
+  }
+
+  ul {
+    gap: 1rem;
+  }
+}
